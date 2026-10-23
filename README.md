@@ -44,10 +44,10 @@ Download the executable for your operating system and CPU architecture. No runti
 | Platform | Intel / AMD (amd64)                                                                                                 | ARM64                                                                                                                      |
 |----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Windows  | No build yet| No build yet        |
-| Linux    | [Download](https://github.com/PsCustomObject/LogScanner/releases/latest/download/logscanner-linux-amd64)            | [Download](https://github.com/PsCustomObject/LogScanner/releases/latest/download/logscanner-linux-arm64)                   |
-| macOS    | [Download](https://github.com/PsCustomObject/LogScanner/releases/latest/download/logscanner-macos-amd64)            | [Download for Apple Silicon](https://github.com/PsCustomObject/LogScanner/releases/latest/download/logscanner-macos-arm64) |
+| Linux    | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-linux-amd64)            | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-linux-arm64)                   |
+| macOS    | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-macos-amd64)            | [Download for Apple Silicon](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-macos-arm64) |
 
-[All releases](https://github.com/PsCustomObject/LogScanner/releases) · [SHA-256 checksums](https://github.com/PsCustomObject/LogScanner/releases/latest/download/SHA256SUMS.txt)
+[All releases](https://github.com/SingularVector/LogScanner/releases) · [SHA-256 checksums](https://github.com/SingularVector/LogScanner/releases/latest/download/SHA256SUMS.txt)
 
 On Linux or macOS, rename the downloaded binary to `logscanner`, make it executable, and run it:
 
