@@ -1,5 +1,6 @@
 # LogScanner
 
+[![CI](https://github.com/SingularVector/LogScanner/actions/workflows/ci.yml/badge.svg)](https://github.com/SingularVector/LogScanner/actions/workflows/ci.yml)
 **Find the entries that matter in your PowerShell automation logs.**
 
 LogScanner is a small Go CLI for the log format produced by IT-ToolBox's `New-LogEntry` function. Scan a file or a directory tree, filter by severity, message, or time, and get readable results with their source file and line number.
@@ -9,6 +10,25 @@ LogScanner is a small Go CLI for the log format produced by IT-ToolBox's `New-Lo
 ```
 
 Built with the Go standard library. No third-party dependencies, background services, or database. Compiled binaries run without PowerShell, .NET, or Go installed.
+
+## See one result
+
+With Go 1.23 or later, run from the repository root:
+
+```sh
+go run ./cmd/logscanner scan --recursive --min-level warning --contains timeout --ignore-case ./examples/logs
+```
+
+The synthetic samples return two timeout warnings, each with its source and line:
+
+```text
+[10/05/2026 10:18:49 PM] - [WARNING]: Connection timeout; retrying | File: examples/logs/application.log | Line: 3
+[10/05/2026 10:18:49 PM] - [WARNING]: Worker TIMEOUT | File: examples/logs/nested/worker.log | Line: 2
+```
+
+| Availability | Platforms | Verification |
+| --- | --- | --- |
+| Build from source; no packaged releases yet | Windows, Linux and macOS; Go 1.23+ to build | [Parser, filter and native CLI checks](https://github.com/SingularVector/LogScanner/actions/workflows/ci.yml); input-format limits below |
 
 ## Why this exists
 
