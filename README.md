@@ -35,30 +35,9 @@ Want to try it first? The repository includes [mock logs](examples/README.md) ge
 go run ./cmd/logscanner scan --recursive --level error ./examples/logs
 ```
 
-### Download a binary
+### Release availability
 
-Download the executable for your operating system and CPU architecture. No runtime installation is required.
-
-**Availability:** these links become active once the first release is published. Until then, build from source below.
-
-| Platform | Intel / AMD (amd64)                                                                                                 | ARM64                                                                                                                      |
-|----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Windows  | No build yet| No build yet        |
-| Linux    | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-linux-amd64)            | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-linux-arm64)                   |
-| macOS    | [Download](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-macos-amd64)            | [Download for Apple Silicon](https://github.com/SingularVector/LogScanner/releases/latest/download/logscanner-macos-arm64) |
-
-[All releases](https://github.com/SingularVector/LogScanner/releases) · [SHA-256 checksums](https://github.com/SingularVector/LogScanner/releases/latest/download/SHA256SUMS.txt)
-
-On Linux or macOS, rename the downloaded binary to `logscanner`, make it executable, and run it:
-
-```sh
-chmod +x logscanner
-./logscanner --help
-```
-
-On Windows, rename it to `logscanner.exe` and run `.\logscanner.exe --help`. Put the executable in a directory on your `PATH` to use it from anywhere.
-
-macOS binaries are currently unsigned and not notarized; macOS may require approval in Privacy & Security before they can run.
+Prebuilt downloads have not been published yet. Build from source using the instructions below; the [releases page](https://github.com/SingularVector/LogScanner/releases) will list packaged executables when available.
 
 ### Build from source
 
